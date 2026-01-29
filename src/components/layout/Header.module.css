@@ -1,0 +1,56 @@
+.header {
+    background: white;
+    border-bottom: 1px solid var(--gray-200);
+    box-shadow: var(--shadow-sm);
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+}
+
+.logoSection {
+    flex: 1;
+}
+
+.logo {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--primary-600);
+    margin: 0;
+}
+
+.userSection {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.userName {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--gray-900);
+}
+
+.userRole {
+    font-size: var(--font-size-xs);
+    color: var(--gray-500);
+    text-transform: capitalize;
+}
+
+@media (max-width: 640px) {
+    .userName {
+        display: none;
+    }
+}
